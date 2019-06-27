@@ -12,9 +12,29 @@
 		31298C1322C4CA9F00629873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31298C1122C4CA9F00629873 /* Main.storyboard */; };
 		31298C1522C4CAA100629873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31298C1422C4CAA100629873 /* Assets.xcassets */; };
 		31298C1822C4CAA100629873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31298C1622C4CAA100629873 /* LaunchScreen.storyboard */; };
+		31298C2022C4CF0B00629873 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31298C1F22C4CF0B00629873 /* Network.swift */; };
+		31298C4022C4D38F00629873 /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		31298C4822C5155100629873 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31298C4722C5155100629873 /* DataModel.swift */; };
+		31298C4A22C554A700629873 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31298C4922C554A700629873 /* DetailViewController.swift */; };
+		CCB2E739BD6B1A7E3E498033 /* Pods_RamblerTestWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B319A19E22062B750D397A /* Pods_RamblerTestWork.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		31298C3E22C4CF9F00629873 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				31298C4022C4D38F00629873 /* BuildFile in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		25B319A19E22062B750D397A /* Pods_RamblerTestWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RamblerTestWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31298C0A22C4CA9F00629873 /* RamblerTestWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RamblerTestWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31298C0D22C4CA9F00629873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31298C0F22C4CA9F00629873 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +42,11 @@
 		31298C1422C4CAA100629873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31298C1722C4CAA100629873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31298C1922C4CAA100629873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31298C1F22C4CF0B00629873 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		31298C4722C5155100629873 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		31298C4922C554A700629873 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		63EBD1E013FBD88F9170F445 /* Pods-RamblerTestWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RamblerTestWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RamblerTestWork/Pods-RamblerTestWork.debug.xcconfig"; sourceTree = "<group>"; };
+		68076145FE0A36758F932193 /* Pods-RamblerTestWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RamblerTestWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-RamblerTestWork/Pods-RamblerTestWork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +54,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCB2E739BD6B1A7E3E498033 /* Pods_RamblerTestWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14F67C87DE373C714E09A4F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63EBD1E013FBD88F9170F445 /* Pods-RamblerTestWork.debug.xcconfig */,
+				68076145FE0A36758F932193 /* Pods-RamblerTestWork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		31298C0122C4CA9F00629873 = {
 			isa = PBXGroup;
 			children = (
 				31298C0C22C4CA9F00629873 /* RamblerTestWork */,
-				31298C0B22C4CA9F00629873 /* Products */,
+				14F67C87DE373C714E09A4F0 /* Pods */,
+				73151F6785CBFDE8D8DBF7DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,19 +85,40 @@
 				31298C0A22C4CA9F00629873 /* RamblerTestWork.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		31298C0C22C4CA9F00629873 /* RamblerTestWork */ = {
 			isa = PBXGroup;
 			children = (
+				31298C4322C4E0C500629873 /* NetworkLayer */,
 				31298C0D22C4CA9F00629873 /* AppDelegate.swift */,
 				31298C0F22C4CA9F00629873 /* ViewController.swift */,
+				31298C4922C554A700629873 /* DetailViewController.swift */,
 				31298C1122C4CA9F00629873 /* Main.storyboard */,
 				31298C1422C4CAA100629873 /* Assets.xcassets */,
 				31298C1622C4CAA100629873 /* LaunchScreen.storyboard */,
 				31298C1922C4CAA100629873 /* Info.plist */,
+				31298C0B22C4CA9F00629873 /* Products */,
 			);
 			path = RamblerTestWork;
+			sourceTree = "<group>";
+		};
+		31298C4322C4E0C500629873 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				31298C4722C5155100629873 /* DataModel.swift */,
+				31298C1F22C4CF0B00629873 /* Network.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		73151F6785CBFDE8D8DBF7DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25B319A19E22062B750D397A /* Pods_RamblerTestWork.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31298C1C22C4CAA100629873 /* Build configuration list for PBXNativeTarget "RamblerTestWork" */;
 			buildPhases = (
+				ABD3CC66D364DB821E8084A7 /* [CP] Check Pods Manifest.lock */,
 				31298C0622C4CA9F00629873 /* Sources */,
 				31298C0722C4CA9F00629873 /* Frameworks */,
 				31298C0822C4CA9F00629873 /* Resources */,
+				31298C3E22C4CF9F00629873 /* Embed Frameworks */,
+				034D2E171400773556104454 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +190,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		034D2E171400773556104454 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RamblerTestWork/Pods-RamblerTestWork-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RamblerTestWork/Pods-RamblerTestWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABD3CC66D364DB821E8084A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RamblerTestWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		31298C0622C4CA9F00629873 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31298C4A22C554A700629873 /* DetailViewController.swift in Sources */,
 				31298C1022C4CA9F00629873 /* ViewController.swift in Sources */,
+				31298C4822C5155100629873 /* DataModel.swift in Sources */,
 				31298C0E22C4CA9F00629873 /* AppDelegate.swift in Sources */,
+				31298C2022C4CF0B00629873 /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,16 +392,22 @@
 		};
 		31298C1D22C4CAA100629873 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63EBD1E013FBD88F9170F445 /* Pods-RamblerTestWork.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N89Q9ZJQ5N;
 				INFOPLIST_FILE = RamblerTestWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = VK.RamblerTestWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,16 +415,22 @@
 		};
 		31298C1E22C4CAA100629873 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68076145FE0A36758F932193 /* Pods-RamblerTestWork.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N89Q9ZJQ5N;
 				INFOPLIST_FILE = RamblerTestWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = VK.RamblerTestWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
